@@ -1,0 +1,17 @@
+table,
+tr,
+th,
+td {
+    table-layout: fixed;
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+#dataMahasiswa {
+    margin-top: 3rem;
+}
+
+td {
+    white-space: nowrap;
+}

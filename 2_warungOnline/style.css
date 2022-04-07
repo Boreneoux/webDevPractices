@@ -1,0 +1,34 @@
+body {
+    height: 4000px;
+    background-repeat: no-repeat;
+}
+
+nav {
+    text-shadow: 2px 1px #191818;
+}
+
+#home {
+    background-image: url(https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    min-height: 20%;
+}
+
+#shop {
+    background-color: #bf9e65;
+    text-shadow: 1px 1px rgb(255, 255, 255, 0.8)
+}
+
+/* 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+} */
+
+/* 
+.jumbotron {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 15%; 
+    margin-top: 20%;
+} */
