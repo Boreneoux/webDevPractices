@@ -1,6 +1,10 @@
 body {
-    height: 4000px;
+    /* height: 4000px; */
     background-repeat: no-repeat;
+}
+
+.card {
+    background-color: #EDE6DB;
 }
 
 nav {
@@ -17,6 +21,15 @@ nav {
 #shop {
     background-color: #bf9e65;
     text-shadow: 1px 1px rgb(255, 255, 255, 0.8)
+}
+
+#newsletter {
+    background-color: #f3f4f5;
+}
+
+
+footer {
+    background-color: rgb(235, 181, 90);
 }
 
 /* 
