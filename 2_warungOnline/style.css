@@ -5,6 +5,7 @@ body {
 
 nav {
     text-shadow: 2px 1px #191818;
+    background-color: rgba(235, 181, 90, 0.5)
 }
 
 #home {
