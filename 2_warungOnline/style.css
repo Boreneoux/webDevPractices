@@ -32,6 +32,39 @@ footer {
     background-color: rgb(235, 181, 90);
 }
 
+#cart-button {
+    position: fixed;
+    right: 2rem;
+    bottom: 5rem;
+}
+
+#cart-page {
+    position: fixed;
+    bottom: -40rem;
+    right: 6.7rem;
+    width: 22rem;
+    min-height: 30rem;
+    display: block;
+    background-color: rgba(245, 240, 233, 0.8);
+    border-radius: 10px;
+    transition: .6s;
+}
+
+#cart-page.active {
+    bottom: 5rem;
+}
+
+.header-cart {
+    background-color: brown;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+/* .cart-page-display {
+    display: block;
+} */
+
 /* 
 img {
     display: block;
