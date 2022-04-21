@@ -1,0 +1,67 @@
+<%- include('partials/head') %>
+
+<body>
+
+    <% for (let m of Mahasiswa) { %>
+        <% if (m.nilai>= 80 && m.nilai <= 100) {%>
+               <% m.grade='A' %>
+               <% m.status='LULUS!' %>
+       <%} else if (m.nilai>= 60 && m.nilai <= 79) {%>
+               <% m.grade='B' %>
+               <%m.status='LULUS!' %>
+       <% } else if (m.nilai>= 0 && m.nilai <= 59) {%>
+               <% m.grade='C' %>
+               <% m.status='GAGAL!' %>
+       <%}%>
+    <%} %>
+
+<%- include('partials/navbar') %>
+    <h1 class="text-center mt-3 text-light">Data Mahasiswa</h1>
+        <div class="container">
+            <table class="table table-secondary table-hover table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">NIM</th>
+                        <th scope="col">Nama</th>
+                        <th scope="col">Nilai</th>
+                        <th scope="col">Grade</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for(let m of Mahasiswa) {%>
+                        <tr>
+                            <th scope="col">
+                                <%= m.NIM %>
+                            </th>
+                            <td>
+                                <%= m.name %>
+                            </td>
+                            <td>
+                                <%= m.nilai %>
+                            </td>
+                            <td>
+                                <%= m.grade %>
+                            </td>
+                            <td>
+                                <%= m.status %>
+                            </td>
+                        </tr>
+                        <% } %>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container text-center">
+            <a href="/" class="btn btn-lg text-light" id="btn-home">Home</a>
+            <a href="" class="btn btn-lg text-light" id="btn-home">Input</a>
+            <a href="" class="btn btn-lg text-light" id="btn-home">Edit</a>
+            <a href="" class="btn btn-lg text-light" id="btn-home">Delete</a>
+        </div>
+
+    </body>
+
+
+
+
+    </html>
