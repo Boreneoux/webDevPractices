@@ -1,0 +1,23 @@
+<%- include('partials/head') %> 
+<body>
+    <%- include('partials/navbar') %> 
+    <h1 class="mt-3">Input Data Mahasiswa:</h1>
+
+    <div class="container d-flex justify-content-center text-light text-center">
+        <form action="/input" method="POST">
+            <section>
+                <label for="NIM">NIM:</label>
+                <input type="text" placeholder="Masukkan NIM" name="NIM">
+                <label for="name">Nama:</label>
+                <input type="text" placeholder="Masukkan Nama" name="name">
+                <label for="nilai">Nilai:</label>
+                <input type="text" placeholder="Masukkan Nilai" name="nilai">
+            </section>
+            <!-- <br> -->
+            <!-- <button>Submit</button> -->
+            <button type="submit" class="btn btn-md btn-outline-dark mt-3">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>

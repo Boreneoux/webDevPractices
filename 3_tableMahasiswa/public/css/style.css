@@ -28,6 +28,12 @@ html {
     font-size: 5em;
 }
 
+h1 {
+    text-align: center;
+    color: #f8f8f8;
+}
+
+
 hr {
     width: 80em;
     border-top: 1px solid #f8f8f8;

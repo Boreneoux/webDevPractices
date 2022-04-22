@@ -2,19 +2,6 @@
 
 <body>
 
-    <% for (let m of Mahasiswa) { %>
-        <% if (m.nilai>= 80 && m.nilai <= 100) {%>
-               <% m.grade='A' %>
-               <% m.status='LULUS!' %>
-       <%} else if (m.nilai>= 60 && m.nilai <= 79) {%>
-               <% m.grade='B' %>
-               <%m.status='LULUS!' %>
-       <% } else if (m.nilai>= 0 && m.nilai <= 59) {%>
-               <% m.grade='C' %>
-               <% m.status='GAGAL!' %>
-       <%}%>
-    <%} %>
-
 <%- include('partials/navbar') %>
     <h1 class="text-center mt-3 text-light">Data Mahasiswa</h1>
         <div class="container">
@@ -30,6 +17,16 @@
                 </thead>
                 <tbody>
                     <% for(let m of Mahasiswa) {%>
+                        <% if (m.nilai>= 80 && m.nilai <= 100) {%>
+                            <% m.grade='A' %>
+                            <% m.status='LULUS!' %>
+                        <%} else if (m.nilai>= 60 && m.nilai <= 79) {%>
+                            <% m.grade='B' %>
+                            <%m.status='LULUS!' %>
+                        <% } else if (m.nilai>= 0 && m.nilai <= 59) {%>
+                            <% m.grade='C' %>
+                            <% m.status='GAGAL!' %>
+                    <%}%>
                         <tr>
                             <th scope="col">
                                 <%= m.NIM %>
@@ -54,7 +51,7 @@
 
         <div class="container text-center">
             <a href="/" class="btn btn-lg text-light" id="btn-home">Home</a>
-            <a href="" class="btn btn-lg text-light" id="btn-home">Input</a>
+            <a href="/input" class="btn btn-lg text-light" id="btn-home">Input</a>
             <a href="" class="btn btn-lg text-light" id="btn-home">Edit</a>
             <a href="" class="btn btn-lg text-light" id="btn-home">Delete</a>
         </div>
