@@ -1,8 +1,8 @@
-<%- include ('partials/head') %>
+<%- include('partials/head') %> 
 <body>
     <%- include('partials/navbar') %> 
+    <h1 class="mt-3">Edit Nilai NIM: <%= student.NIM  %> </h1>
 
-    <h1 class="mt-3">NIM : <%= student.NIM %>  </h1>
     <div class="container">
         <table class="table table-secondary table-hover table-bordered">
             <thead class="table-dark">
@@ -46,15 +46,16 @@
             </tbody>
         </table>
     </div>
-    <div class="container text-center">
-        <a href="/" class="btn btn-lg text-light" id="btn-home">Back to Home</a>
-        <a href="/edit/<%= student.NIM %>" class="btn btn-lg text-light" id="btn-home">Edit Nilai</a>
-        <form action="/edit/<%=student.NIM%>?_method=DELETE" method="POST">
-            <button class="btn btn-lg text-light mt-2" id="btn-home">Delete Data Ini!</button>
-        </form>
+
+    <div class="container d-flex justify-content-center text-light text-center">
+    <form action="/edit/<%= student.NIM %>?_method=PATCH" method="POST">
+        <section>
+            <label for="nilai">Nilai:</label>
+            <input type="text" placeholder="Masukkan Nilai" name="nilai">
+        </section>
+        <button type="submit" class="btn btn-md btn-outline-dark mt-3">Submit</button>
+    </form>
     </div>
 
-</body>
-    
 </body>
 </html>

@@ -13,6 +13,7 @@
                         <th scope="col">Nilai</th>
                         <th scope="col">Grade</th>
                         <th scope="col">Status</th>
+                        <th scope="col">Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -43,6 +44,9 @@
                             <td>
                                 <%= m.status %>
                             </td>
+                            <td>
+                                <a href="/show/<%=m.NIM%>">details</a>
+                            </td>
                         </tr>
                         <% } %>
                 </tbody>
@@ -52,8 +56,6 @@
         <div class="container text-center">
             <a href="/" class="btn btn-lg text-light" id="btn-home">Home</a>
             <a href="/input" class="btn btn-lg text-light" id="btn-home">Input</a>
-            <a href="" class="btn btn-lg text-light" id="btn-home">Edit</a>
-            <a href="" class="btn btn-lg text-light" id="btn-home">Delete</a>
         </div>
 
     </body>
