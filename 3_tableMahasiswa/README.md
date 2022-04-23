@@ -9,12 +9,12 @@ WebApp ini dapat memvalidasi nilai mahasiswa untuk mengetahui apakah mahasiswa t
 
 ## Tampilan Project
 ### Homepage :
-![homepage](/doc/homepage.png)
+![homepage](doc/homepage.png)
 ### View Page:
-![view-page](/doc/view.png)
+![view-page](doc/view.png)
 ### Input Page: 
-![input-page](/doc/input.png)
+![input-page](doc/input.png)
 ### Show / Detail Page :
-![show-detail-page](/doc/show.png)
+![show-detail-page](doc/show.png)
 ### Edit Page:
-![edit-page](/doc/edit.png)
+![edit-page](doc/edit.png)
